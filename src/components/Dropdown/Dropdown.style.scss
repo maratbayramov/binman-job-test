@@ -1,0 +1,23 @@
+.dropdown {
+  position: relative;
+
+  select {
+    appearance: none;
+    background-color: #f4f9fb;
+    border: 1px solid #dce5ea;
+    border-radius: 3px;
+    color: #8ea4b5;
+    cursor: pointer;
+    font-size: 12px;
+    height: 36px;
+    padding: 0 8px;
+    width: 100%;
+  }
+
+  svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

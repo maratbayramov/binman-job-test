@@ -1,0 +1,37 @@
+.button {
+  align-items: center;
+  background-color: #386bf2;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 11px;
+  font-stretch: ultra-condensed;
+  font-weight: 600;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: 0;
+  margin: 0 5px;
+  padding: 0 15px;
+  text-transform: uppercase;
+
+  &--outline {
+    background-color: #fff;
+    border: 1px solid #dbe4e7;
+    color: #475364;
+  }
+
+  &--only-icon {
+    padding: 9px 11px;
+
+    svg {
+      margin: 0 !important;
+      pointer-events: none;
+    }
+  }
+
+  & > svg {
+    margin-right: 6px;
+  }
+}

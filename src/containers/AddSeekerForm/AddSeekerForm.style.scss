@@ -1,0 +1,161 @@
+.add-seeker-form {
+  background-color: rgba(#475364, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+  &--show {
+    display: block;
+  }
+
+  &__close-button {
+    left: -40px;
+    position: absolute;
+    top: 12px;
+
+    & > .button {
+      background-color: #fff;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      height: 30px;
+      margin: 0;
+      width: 30px;
+    }
+  }
+
+  &__wrapper {
+    background-color: #fff;
+    min-height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 650px;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid #f4f9fb;
+    margin: 20px 0;
+  }
+
+  label {
+    &[for='phone-number'] {
+      .add-seeker-form__add-more {
+        text-decoration-style: dotted;
+      }
+    }
+  }
+
+  &__add-more {
+    color: #8ea4b5;
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 4px;
+    text-decoration-style: solid;
+    text-transform: initial;
+
+    &:first-child {
+      text-decoration-style: dotted;
+    }
+  }
+
+  &__caption {
+    color: #8ea4b5;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 0 !important;
+    text-transform: initial;
+  }
+
+  &__title {
+    color: #475364;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 25px;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    padding: 0 25px;
+
+    p {
+      color: #475364;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 16px 0;
+      text-transform: uppercase;
+    }
+
+    label {
+      color: #475364;
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      margin: 16px 0 20px;
+      text-transform: uppercase;
+
+      & > * {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__ratings {
+    color: #475364;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0 25px;
+    text-transform: uppercase;
+
+    & > * {
+      flex-grow: 1;
+      margin-top: 16px;
+
+      .rating__stars {
+        margin-top: 6px;
+      }
+    }
+
+    & > div {
+      &:nth-child(2),
+      &:nth-child(3) {
+        .rating {
+          path {
+            fill: #ff5d00;
+          }
+
+          use {
+            stroke: #ff5d00;
+          }
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px 25px;
+
+    & > * {
+      flex-grow: 1;
+    }
+
+    & > *:first-child {
+      margin-left: 0;
+    }
+
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+}

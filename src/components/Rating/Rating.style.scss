@@ -1,0 +1,39 @@
+.rating {
+  &__stars {
+    height: 15px;
+    position: relative;
+    width: 72px;
+
+    &-filled,
+    &-outlined {
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+
+      svg {
+        margin: 0 1px;
+      }
+    }
+
+    &-filled {
+      z-index: 2;
+    }
+
+    &-outlined {
+      z-index: 1;
+    }
+  }
+
+  &__caption {
+    color: #8ea4b5;
+    font-size: 10px;
+    margin-top: 4px;
+
+    span {
+      color: #475364;
+      font-weight: 600;
+    }
+  }
+}

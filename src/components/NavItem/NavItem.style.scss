@@ -1,0 +1,19 @@
+.nav-item {
+  margin-bottom: 10px;
+
+  & > a {
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 50px;
+  }
+
+  &--active {
+    background-color: #282e37 !important;
+    border-radius: 4px;
+    color: #00d4ff !important;
+  }
+}

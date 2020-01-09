@@ -1,0 +1,11 @@
+.nav {
+  background-color: #323a45;
+  padding: 15px;
+  width: 80px;
+
+  & > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
